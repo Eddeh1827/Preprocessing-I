@@ -141,10 +141,11 @@ html {
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   background: #ffffff;
 }
 header nav ul li {
+  border: 1px solid black;
+  padding: 10px 10px;
   margin: 2% 2%;
   padding: 0px 1em;
 }
@@ -155,6 +156,44 @@ div #top-div-img {
   width: 35%;
   height: 35%;
 }
+/*example less variable
+@blue-p: blue;
 p {
-  background-color: blue;
+  background-color: @blue-p;
+}
+*/
+.container div {
+  margin: 5px auto;
+}
+.container li {
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+.container h1 {
+  font-size: 40px;
+}
+.container h2 {
+  font-size: 22px;
+}
+.container #top-div-img {
+  padding: 2% 10px;
+}
+.container .left {
+  width: 50%;
+}
+.container .right {
+  width: 50%;
+  text-align: end;
+  padding-right: 3%;
+}
+.bordered {
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+.half-width {
+  display: flex;
+  width: 100%;
+}
+.mid-content {
+  padding: 4% auto;
 }
