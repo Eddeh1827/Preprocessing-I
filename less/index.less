@@ -130,6 +130,30 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+/********Variables********/
+@bold-font: bold;
+@large-font: 40px;
+@medium-font: 22px;
+@medium-margin: 5px auto;
+
+/**********Mixins*********/
+.bordered() {
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+.flex() {
+  display: flex;
+}
+.half-width() {
+  width: 50%;
+  padding: 10px;
+}
+.padded(@padding) {
+  padding: @padding;
+}
+/*******************End Of Variables & Mixins************/
+
 * {
   box-sizing: border-box;
 }
@@ -159,37 +183,12 @@ header {
   }
 }
 div {
-  background: gray;
   #top-div-img {
     width: 35%;
     height: 35%;
   }
 }
-/*example less variable
-@blue-p: blue;
-p {
-  background-color: @blue-p;
-}
-*/
-/********Variables********/
-@bold-font: bold;
-@large-font: 40px;
-@medium-font: 22px;
-@medium-margin: 5px auto;
-
-/**********Mixins*********/
-.bordered() {
-  border: 1px solid black;
-  padding: 10px 10px;
-}
-.flex() {
-  display: flex;
-}
-.half-width() {
-  width: 50%;
-  padding: 10px;
-}
-
+/*****Class styles*****/
 .container {
   div {
     margin: @medium-margin;
@@ -227,11 +226,26 @@ p {
   }
 
   .bottom-content {
+    h2 {
+      .padded(10px 0 15px 0);
+    }
     #work-table {
-      border: 1px solid black;
+      thead,
+      tbody,
+      tr {
+        .bordered();
+      }
+      .work-head {
+        .padded(8px 0);
+        background-color: red;
+        font-weight: @bold-font;
+      }
       width: 100%;
       height: 20px;
       border-collapse: none;
+      .table-row:nth-of-type(odd) {
+        background: #ccc;
+      }
       td {
         text-align: center;
       }

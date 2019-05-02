@@ -127,6 +127,9 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+/********Variables********/
+/**********Mixins*********/
+/*******************End Of Variables & Mixins************/
 * {
   box-sizing: border-box;
 }
@@ -149,21 +152,11 @@ header nav ul li {
   margin: 2% 2%;
   padding: 0px 1em;
 }
-div {
-  background: gray;
-}
 div #top-div-img {
   width: 35%;
   height: 35%;
 }
-/*example less variable
-@blue-p: blue;
-p {
-  background-color: @blue-p;
-}
-*/
-/********Variables********/
-/**********Mixins*********/
+/*****Class styles*****/
 .container div {
   margin: 5px auto;
 }
@@ -196,11 +189,27 @@ p {
   font-weight: bold;
   margin: 30px;
 }
+.container .bottom-content h2 {
+  padding: 10px 0 15px 0;
+}
 .container .bottom-content #work-table {
-  border: 1px solid black;
   width: 100%;
   height: 20px;
   border-collapse: none;
+}
+.container .bottom-content #work-table thead,
+.container .bottom-content #work-table tbody,
+.container .bottom-content #work-table tr {
+  border: 1px solid black;
+  padding: 10px 10px;
+}
+.container .bottom-content #work-table .work-head {
+  padding: 8px 0;
+  background-color: red;
+  font-weight: bold;
+}
+.container .bottom-content #work-table .table-row:nth-of-type(odd) {
+  background: #ccc;
 }
 .container .bottom-content #work-table td {
   text-align: center;
