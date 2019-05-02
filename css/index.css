@@ -135,5 +135,26 @@ body {
   height: 100%;
 }
 html {
-  background-color: red;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: #ffffff;
+}
+header nav ul li {
+  margin: 2% 2%;
+  padding: 0px 1em;
+}
+div {
+  background: gray;
+}
+div #top-div-img {
+  width: 35%;
+  height: 35%;
+}
+p {
+  background-color: blue;
 }
