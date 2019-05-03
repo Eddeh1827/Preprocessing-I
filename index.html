@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
 
     <title>My Resume</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css" />
     <script>
       function toggler() {
@@ -25,7 +25,7 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="mobile">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Portfolio</a></li>
@@ -33,95 +33,98 @@
         </ul>
       </nav>
     </header>
-    <section class="container">
-      <div class="top-content">
-        <img
-          id="top-div-img"
-          src="images/coffeecup.jpg"
-          alt="Drinking Coffee"
-        />
-        <h1>Jonny Appleseed - Web Dev</h1>
-        <p>Technology is my jam!</p>
-        <hr />
-        <p>
-          Occasionally I have time to work on side projects, if you're
-          interested, let me know by signing up on this website.
-        </p>
-        <button onclick="toggler()">
-          Lets Team Up
-        </button>
-        <div id="contact">
-          <h3>Contact Me:</h3>
-          <p>Phone: (555)555-5555</p>
-          <p>Email: appleseedjo@greatestdevalive.com</p>
+    <main>
+      <section class="container mobile">
+        <div class="top-content">
+          <img
+            id="top-div-img"
+            src="images/coffeecup.jpg"
+            alt="Drinking Coffee"
+          />
+          <h1>Jonny Appleseed - Web Dev</h1>
+          <p>Technology is my jam!</p>
+          <hr />
+          <p>
+            Occasionally I have time to work on side projects, if you're
+            interested, let me know by signing up on this website.
+          </p>
+          <button onclick="toggler()">
+            Lets Team Up
+          </button>
+          <div id="contact">
+            <h3>Contact Me:</h3>
+            <p>Phone: (555)555-5555</p>
+            <p>Email: appleseedjo@greatestdevalive.com</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container half">
-      <div class="mid-content-left">
-        <h2>Listen Up...</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea cum
-          nesciunt illo recusandae ut magni in rem voluptates repellat ipsa
-          porro eveniet quasi, modi ad reprehenderit quod. Consequuntur officia
-          consequatur beatae accusamus architecto unde ex amet eveniet
-          laudantium optio impedit doloremque, debitis ipsum accusantium
-          provident perferendis delectus dicta. Ducimus illum voluptate possimus
-          est eveniet veniam molestias vero adipisci voluptatem cupiditate
-          accusamus sint quas delectus repellendus quo facere repudiandae, unde
-          error natus veritatis porro, sequi ipsa quibusdam? Vel quod quasi odit
-          enim quaerat ipsum maiores molestiae. Cum repellendus at nesciunt
-          possimus, cupiditate repudiandae expedita error molestias amet numquam
-          eaque excepturi laboriosam culpa voluptates.
-        </p>
-      </div>
-      <div class="mid-content-right">
-        <h2>Stuff I'm Good At:</h2>
-        <ul>
-          <li>Disc Golf</li>
-          <li>Coding up UI</li>
-          <li>Playing lots of video games</li>
-          <li>Using bootstrap grid</li>
-          <li>Taking long naps</li>
-        </ul>
-      </div>
-    </section>
-    <section class="container">
-      <div class="bottom-content">
-        <h2>Work History</h2>
-        <table id="work-table">
-          <thead>
-            <tr>
-              <th class="work-head">Yrs</th>
-              <th class="work-head">Company</th>
-              <th class="work-head">Title</th>
-              <th class="work-head">Tech Used</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="table-row">
-              <td>1</td>
-              <td>Apple</td>
-              <td>Software Engineer</td>
-              <td>Swift</td>
-            </tr>
-            <tr class="table-row">
-              <td>2</td>
-              <td>Microsoft</td>
-              <td>Computer Scientist</td>
-              <td>.NET</td>
-            </tr>
-            <tr class="table-row">
-              <td>3</td>
-              <td>Amazon</td>
-              <td>Dev Ops</td>
-              <td>AWS</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <footer>
+      </section>
+      <section class="container half mobile">
+        <div class="mid-content-left">
+          <h2>Listen Up...</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea cum
+            nesciunt illo recusandae ut magni in rem voluptates repellat ipsa
+            porro eveniet quasi, modi ad reprehenderit quod. Consequuntur
+            officia consequatur beatae accusamus architecto unde ex amet eveniet
+            laudantium optio impedit doloremque, debitis ipsum accusantium
+            provident perferendis delectus dicta. Ducimus illum voluptate
+            possimus est eveniet veniam molestias vero adipisci voluptatem
+            cupiditate accusamus sint quas delectus repellendus quo facere
+            repudiandae, unde error natus veritatis porro, sequi ipsa quibusdam?
+            Vel quod quasi odit enim quaerat ipsum maiores molestiae. Cum
+            repellendus at nesciunt possimus, cupiditate repudiandae expedita
+            error molestias amet numquam eaque excepturi laboriosam culpa
+            voluptates.
+          </p>
+        </div>
+        <div class="mid-content-right">
+          <h2>Stuff I'm Good At:</h2>
+          <ul>
+            <li>Disc Golf</li>
+            <li>Coding up UI</li>
+            <li>Playing lots of video games</li>
+            <li>Using bootstrap grid</li>
+            <li>Taking long naps</li>
+          </ul>
+        </div>
+      </section>
+      <section class="container mobile">
+        <div class="bottom-content">
+          <h2>Work History</h2>
+          <table id="work-table">
+            <thead>
+              <tr>
+                <th class="work-head">Yrs</th>
+                <th class="work-head">Company</th>
+                <th class="work-head">Title</th>
+                <th class="work-head">Tech Used</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row">
+                <td>1</td>
+                <td>Apple</td>
+                <td>Software Engineer</td>
+                <td>Swift</td>
+              </tr>
+              <tr class="table-row">
+                <td>2</td>
+                <td>Microsoft</td>
+                <td>Computer Scientist</td>
+                <td>.NET</td>
+              </tr>
+              <tr class="table-row">
+                <td>3</td>
+                <td>Amazon</td>
+                <td>Dev Ops</td>
+                <td>AWS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="mobile">
       <div>
         <p>Copyright Awesomeness 2018</p>
       </div>
