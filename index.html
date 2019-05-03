@@ -7,7 +7,16 @@
     <title>My Resume</title>
 
     <link rel="stylesheet" href="css/index.css" />
-
+    <script>
+      function toggler() {
+        var x = document.getElementById("contact");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -17,10 +26,10 @@
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +47,14 @@
           Occasionally I have time to work on side projects, if you're
           interested, let me know by signing up on this website.
         </p>
-        <button>Lets Team Up</button>
+        <button onclick="toggler()">
+          Lets Team Up
+        </button>
+        <div id="contact">
+          <h3>Contact Me:</h3>
+          <p>Phone: (555)555-5555</p>
+          <p>Email: appleseedjo@greatestdevalive.com</p>
+        </div>
       </div>
     </section>
     <section class="container half">
@@ -103,13 +119,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </section>
-    <section class="container">
-      <div class="contact">
-        <h3>Contact Me:</h3>
-        <p>Phone: (555)555-5555</p>
-        <p>Email: appleseedjo@greatestdevalive.com</p>
       </div>
     </section>
     <footer>

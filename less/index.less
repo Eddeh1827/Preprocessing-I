@@ -161,6 +161,9 @@ table {
 html,
 body {
   height: 100%;
+  @media (max-width: 500px) {
+    width: 500px;
+  }
 }
 
 html {
@@ -188,7 +191,10 @@ div {
     height: 35%;
   }
 }
-/*****Class styles*****/
+/************* .class styles ************/
+.container .top-content {
+  background: rgb(182, 180, 180);
+}
 .container {
   div {
     margin: @medium-margin;
@@ -210,6 +216,7 @@ div {
     * {
       margin: 12px;
     }
+
     hr {
       align-self: center;
       border-color: #ccc;
@@ -263,5 +270,23 @@ div {
     text-align: start;
     padding-right: 3%;
     margin: @medium-margin;
+  }
+}
+
+#contact {
+  .flex();
+  justify-content: center;
+  justify-items: space-evenly;
+  align-items: baseline;
+  font-size: 18px;
+  display: none;
+}
+footer {
+  div {
+    background: rgb(77, 76, 76);
+    p {
+      color: white;
+      text-align: center;
+    }
   }
 }
